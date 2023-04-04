@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    font-family: sans-serif;
+    margin: 0 100px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(237, 251, 253, 0.925);
+    border: none;
+    padding: 0 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkgray;
+    font-size: small;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    margin-left: 40px;
+}
+
+.col-1 {
+    flex-basis: 45%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.image{
+    flex-basis: 40%;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.small{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+}
+.small-img{
+    flex-basis: 10%;
+    overflow: hidden;
+}
+.small-img img{
+    width: 100px;
+    outline: none;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.flex{
+    display: flex;
+    margin: 10% auto;
+}
+
+.main {
+    flex-basis: 55%;
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.col-2 p {
+    color: rgba(252, 142, 40, 0.979);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.col-2 h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.col-3 p {
+    color: darkgray;
+
+    margin-bottom: 20px;
+    word-spacing: 1px;
+}
+
+.span h2 {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+}
+
+.num {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(252, 142, 40, 0.979);
+    margin-left: 20px;
+    background-color: rgba(219, 207, 195, 0.979);
+    padding: 3px 4px 3px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.cancell p {
+    color: darkgray;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    text-decoration: line-through;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.cart .addcart{
+    background-color: rgba(231, 125, 25, 0.979);
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 15px 80px;
+    border-radius: 10px;
+    display: inline-flex;
+    margin: 0px 30px;
+
+}
+
+.addcart a{
+    text-decoration: none;
+    color: rgb(238, 222, 194);
+    margin-left: 5px;
+
+}
+.cart .opp{
+    align-items: center;
+    display: inline;
+    background-color: rgb(225, 222, 219);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.opp span{
+    margin-left: 20px;
+    padding: 5px 5px;
+    color: rgba(252, 142, 40, 0.979);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.addcart{
+    margin: 0px 3px;
+}
+.addcart img{
+    color: rgb(238, 222, 194);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <nav>
+      <img src="./images/logo.svg">
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="icon">
+      <img src="./images/icon-cart.svg" width="20px">
+      <img src="./images/image-avatar.png" width="40px">
+    </div>
+  </div>
+  <div class="flex">
+    <div class="col-1">
+      <div class="image">
+        <img id="big-img" src="./images/image-product-1.jpg">
+      </div>
+      <div class="small">
+
+        <div class="small-img">
+          <img id="btn1" src="./images/image-product-1.jpg">
+        </div>
+
+        <div class="small-img">
+          <img id="btn2" src="./images/image-product-2.jpg">
+        </div>
+
+        <div class="small-img">
+          <img id="btn3" src="./images/image-product-3.jpg">
+        </div>
+
+        <div class="small-img">
+          <img id="btn4" src="./images/image-product-4.jpg">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="col-2">
+        <p>SNEAKER COMPANY</p>
+
+        <h1> Fall Limited Edition <br> Sneakers</h1>
+      </div>
+
+
+      <div class="col-3">
+        <p>These low-profile sneakers are your perfect casual wear <br> companion. Featuring a
+          durable rubber outer sole, they’ll <br> withstand everything the weather can offer.</p>
+      </div>
+
+
+      <div class="span">
+        <h2> $125.00 </h2>
+        <span class="num">50%</span>
+      </div>
+
+      <div class="cancell">
+        <p>$250.00</p>
+      </div>
+
+      <div class="cart">
+        <div class="opp">
+          <span id="subtract" onclick="minus()">-</span>
+          <span id="number">0</span>
+          <span id="addition" onclick="add()">+</span>
+        </div>
+
+
+        <div class="addcart">
+          <img src="./images/icon-cart.svg" width="13px">
+          <a href="">Add to cart</a>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>
