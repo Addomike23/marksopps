@@ -77,9 +77,9 @@ const quizData = [
         c: "Fish",
         d: "Mansion",
         correct: "c"
-    }
-
-    , {
+    },
+    
+    {
         page: 9,
         question: "what is the full name for C.P.U",
         a: "Central Processing Unit",
@@ -141,7 +141,7 @@ const quizData = [
 
     {
         page: 15,
-        question: "The fastest computer is found in.....",
+        question: "The fastest computer is found in? ",
         a: "USA department of e-basic",
         b: "US department of energy",
         c: "UK department of energy",
@@ -151,7 +151,7 @@ const quizData = [
 
     {
         page: 16,
-        question: "The first computer generation use......",
+        question: "The first computer generation use. ",
         a: "transistors",
         b: "speakers",
         c: "vacuum tubes",
@@ -161,7 +161,7 @@ const quizData = [
 
     {
         page: 17,
-        question: "The second computer generation use..",
+        question: "The second computer generation use. ",
         a: "transistors",
         b: "joystick",
         c: "vacuum pipes",
@@ -217,6 +217,7 @@ let userEl = document.getElementById("user")
 
 let userData = prompt("Please enter your name to start quiz: ")
 
+let score = 0
 
 
 let minute = 4
@@ -260,9 +261,8 @@ function timeReader() {
 
 // Main quiz logic
 
-let score = 0
+
 let currentQuiz = 0
-let finalanswer;
 
 
 
@@ -291,29 +291,32 @@ function deSelect() {
 }
 
 function getSelected() {
+    let finalanswer = undefined
     answers.forEach(answer => {
         if (answer.checked) {
             finalanswer = answer.id
         }
     })
     return finalanswer;
+    // console.log(finalanswer);
 }
 
 // Logic for submiting answer 
 
 submitBtn.addEventListener('click', () => {
-    let finalanswer = getSelected()
-    if (finalanswer) {
-        if (finalanswer == quizData[currentQuiz].correct) {
+    const result = getSelected()
+    if (result) {
+        if (result == quizData[currentQuiz].correct) {
             score++
         }
-    }
-    currentQuiz++
-    (currentQuiz < quizData.length) ? loadQuiz() : quizApp.innerHTML =
-    
-    
-    `<h1>Quiz over ${userData} ,  You scored    ${score}  /  ${quizData.length}</h1>`
 
+
+    }
+
+    currentQuiz++
+        
+        (currentQuiz < quizData.length) ? loadQuiz() : quizApp.innerHTML = 
+        `<h1>Quiz over ${userData} ,  You scored    ${score}  /  ${quizData.length}</h1>`
 
 
 

@@ -161,7 +161,7 @@
 
 /* media screen */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     .small {
         width: 100%;
     }
@@ -171,7 +171,8 @@
     }
 
     .quiz-container {
-        padding-top: 40px;
+        width: 100%;
+        height: 100vh;
     }
 
 }
